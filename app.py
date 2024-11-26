@@ -1,64 +1,53 @@
 import streamlit as st
 import openai
-import pandas as pd
-import random
 
-# Set OpenAI API key (replace "your-api-key" with your actual API key)
-openai.api_key = "your-api-key"
+# Set up your OpenAI API key (Ensure you've set this using secrets as shown earlier)
+openai.api_key = st.secrets["openai"]["api_key"]
 
-# Sidebar for navigation
-page = st.sidebar.selectbox("Navigation", ["Welcome", "Chat Interface", "Statistics Page"])
+# Define the app pages
+PAGES = {
+    "Welcome": "welcome",
+    "Chat": "chat",
+    "Statistics": "statistics"
+}
 
-# Page 1: Welcome Page
+# Create the page navigation
+st.sidebar.title("Navigation")
+page = st.sidebar.radio("Choose a page", list(PAGES.keys()))
+
+# Welcome page
 if page == "Welcome":
-    st.title("Welcome to the App")
-    st.write("This is a multi-page Streamlit app.")
-    st.write("""
-    - Navigate through the pages using the sidebar.
-    - Try out the chat interface connected to OpenAI.
-    - View some random statistics on the Statistics Page.
-    """)
+    st.title("Welcome to the Guess Who Game")
+    st.write("Select a page from the sidebar to start!")
 
-# Page 2: Chat Interface
-elif page == "Chat Interface":
+# Chat page
+elif page == "Chat":
     st.title("Chat with OpenAI")
-    
-    # Input box for user query
-    user_input = st.text_input("Enter your question:", "")
-    
-    if st.button("Send"):
-        if user_input.strip():
-            # Send user input to OpenAI's GPT model
-            try:
-                response = openai.ChatCompletion.create(
-                    model="gpt-3.5-turbo",
-                    messages=[{"role": "user", "content": user_input}],
-                )
-                # Display response
-                st.write("**OpenAI Response:**")
-                st.write(response.choices[0].message.content)
-            except Exception as e:
-                st.error(f"An error occurred: {e}")
-        else:
-            st.warning("Please enter a valid question.")
 
-# Page 3: Statistics Page
-elif page == "Statistics Page":
+    # User input for the chat
+    user_input = st.text_input("Guess a historical figure:")
+
+    # Generate response when user clicks "Send"
+    if st.button("Send") and user_input:
+        try:
+            # Use the new API for chat completions (v1.0+)
+            response = openai.completions.create(
+                model="gpt-3.5-turbo",  # Use the model like "gpt-3.5-turbo" or "gpt-4"
+                prompt=user_input,
+                max_tokens=150
+            )
+            st.write(response.choices[0].text.strip())  # Display the response
+        except Exception as e:
+            st.error(f"Error: {e}")
+
+# Statistics page
+elif page == "Statistics":
     st.title("Statistics Page")
-    st.write("Here are some random statistics generated for you.")
-    
-    # Create random data
-    data = {
-        "Category": ["A", "B", "C", "D"],
-        "Values": [random.randint(10, 100) for _ in range(4)],
-    }
-    df = pd.DataFrame(data)
-    
-    # Display table
-    st.write("### Data Table:")
-    st.dataframe(df)
-    
-    # Display bar chart
-    st.write("### Bar Chart:")
-    st.bar_chart(df.set_index("Category"))
 
+    # Example of showing some basic statistics
+    st.write("Here are some statistics about your application:")
+
+    # Dummy data for the statistics
+    st.write("Total API Calls: 10")
+    st.write("Average Response Time: 250ms")
+    st.write("Total Characters Used: 5000")
