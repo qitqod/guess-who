@@ -1,5 +1,5 @@
 import streamlit as st
-import openai  # Ensure openai is installed: pip install openai
+import openai
 import pandas as pd
 import random
 
