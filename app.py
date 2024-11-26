@@ -8,7 +8,7 @@ from openai import OpenAI
 PAGES = {
     "Welcome": "welcome",
     "Play": "play",
-    "Statistics": "stats"
+    "Stats": "stats"
 }
 
 # Create the page navigation
