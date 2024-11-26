@@ -3,39 +3,6 @@ import random
 import json
 from openai import OpenAI
 
-# with st.sidebar:
-#     openai_api_key = st.secrets["openai"]["api_key"]
-#     # openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
-#     # "[Get an OpenAI API key](https://platform.openai.com/account/api-keys)"
-#     # "[View the source code](https://github.com/streamlit/llm-examples/blob/main/Chatbot.py)"
-#     # "[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/llm-examples?quickstart=1)"
-
-# st.title("💬 Guess a historical figure")
-
-# if "messages" not in st.session_state:
-#     st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
-
-# for msg in st.session_state.messages:
-#     st.chat_message(msg["role"]).write(msg["content"])
-
-# if prompt := st.chat_input():
-#     if not openai_api_key:
-#         st.info("Please add your OpenAI API key to continue.")
-#         st.stop()
-
-#     client = OpenAI(api_key=openai_api_key)
-#     st.session_state.messages.append({"role": "user", "content": prompt})
-#     st.chat_message("user").write(prompt)
-#     response = client.chat.completions.create(model="gpt-3.5-turbo", messages=st.session_state.messages)
-#     msg = response.choices[0].message.content
-#     st.session_state.messages.append({"role": "assistant", "content": msg})
-#     st.chat_message("assistant").write(msg)
-
-
-
-
-
-
 
 # Define the app pages
 PAGES = {
@@ -50,57 +17,11 @@ page = st.sidebar.radio("Choose a page", list(PAGES.keys()))
 
 # Welcome page
 if page == "Welcome":
-    st.title("Welcome to the Chat Application")
-    st.write("Select a page from the sidebar to start!")
+    st.title("Welcome to the Food Guessing Game")
+    st.write("Select Play in the sidebar to start guessing and check your game stats on the Stats page")
 
 # Chat page
 elif page == "Play":
-    # st.title("Chat with OpenAI")
-
-    # # User input for the chat
-    # user_input = st.text_input("Ask me anything:")
-
-    # # Generate response when user clicks "Send"
-    # if st.button("Send") and user_input:
-    #     try:
-    #         # Use the correct API for chat-based completions (v1/chat/completions endpoint)
-    #         response = openai.ChatCompletion.create(
-    #             model="gpt-3.5-turbo",  # Use the chat model like "gpt-3.5-turbo" or "gpt-4"
-    #             messages=[{"role": "user", "content": user_input}],  # Correct format for chat model
-    #             max_tokens=150
-    #         )
-    #         # Extract and display the chat response
-    #         st.write(response['choices'][0]['message']['content'].strip())  # Display the response
-    #     except Exception as e:
-    #         st.error(f"Error: {e}")
-
-            
-    # openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
-    # "[Get an OpenAI API key](https://platform.openai.com/account/api-keys)"
-    # "[View the source code](https://github.com/streamlit/llm-examples/blob/main/Chatbot.py)"
-    # "[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/llm-examples?quickstart=1)"
-    # openai_api_key = st.secrets["openai"]["api_key"]
-    # st.title("💬 Guess a historical figure")
-    # if "messages" not in st.session_state:
-    #     st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
-
-    # for msg in st.session_state.messages:
-    #     st.chat_message(msg["role"]).write(msg["content"])
-
-    # if prompt := st.chat_input():
-    #     if not openai_api_key:
-    #         st.info("Please add your OpenAI API key to continue.")
-    #         st.stop()
-
-    #     client = OpenAI(api_key=openai_api_key)
-    #     st.session_state.messages.append({"role": "user", "content": prompt})
-    #     st.chat_message("user").write(prompt)
-    #     response = client.chat.completions.create(model="gpt-3.5-turbo", messages=st.session_state.messages)
-    #     msg = response.choices[0].message.content
-    #     st.session_state.messages.append({"role": "assistant", "content": msg})
-    #     st.chat_message("assistant").write(msg)
-
-
 
 # Load the foods data from the JSON file
     def load_foods():
@@ -131,9 +52,9 @@ elif page == "Play":
 
     # Process the user input
     if prompt := st.chat_input():
-        if not openai_api_key:
-            st.info("Please add your OpenAI API key to continue.")
-            st.stop()
+        # if not openai_api_key:
+        #     st.info("Please add your OpenAI API key to continue.")
+        #     st.stop()
 
         # Add the user's input to the session's messages
         st.session_state.messages.append({"role": "user", "content": prompt})
@@ -163,13 +84,14 @@ elif page == "Play":
 
 
 # Statistics page
-elif page == "Statistics":
-    st.title("Statistics Page")
+elif page == "Stats":
+    st.title("Statistics")
 
     # Example of showing some basic statistics
-    st.write("Here are some statistics about your application:")
+    st.write("Here are some statistics about your games:")
 
     # Dummy data for the statistics
-    st.write("Total API Calls: 10")
-    st.write("Average Response Time: 250ms")
-    st.write("Total Characters Used: 5000")
+    st.write("Total Games: 10")
+    st.write("Average nunmber of guesses per game: 5")
+    st.write("Least number of guesses per game: 5")
+    st.write("Highest number of guesses per game: 15")
