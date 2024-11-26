@@ -7,8 +7,8 @@ openai.api_key = st.secrets["openai"]["api_key"]
 # Define the app pages
 PAGES = {
     "Welcome": "welcome",
-    "Chat": "chat",
-    "Statistics": "statistics"
+    "Play": "play",
+    "Statistics": "stats"
 }
 
 # Create the page navigation
@@ -31,8 +31,8 @@ elif page == "Chat":
     # Generate response when user clicks "Send"
     if st.button("Send") and user_input:
         try:
-            # Use the new API for chat-based completions (v1/chat/completions endpoint)
-            response = openai.chat_completions.create(
+            # Use the correct API for chat-based completions (v1/chat/completions endpoint)
+            response = openai.ChatCompletion.create(
                 model="gpt-3.5-turbo",  # Use the chat model like "gpt-3.5-turbo" or "gpt-4"
                 messages=[{"role": "user", "content": user_input}],  # Correct format for chat model
                 max_tokens=150
