@@ -63,14 +63,6 @@ elif page == "Play":
         # Send the conversation and random food data to OpenAI to continue the guessing game
         client = OpenAI(api_key=openai_api_key)
         
-        # If it's the first question, introduce the food to be guessed
-        if "food" not in st.session_state:
-            st.session_state["food"] = food_name
-            st.session_state["messages"].append({
-                "role": "assistant", 
-                "content": f"Okay, I am thinking of a food. Let's start with this: It's called {food_name}. Try asking yes/no questions to guess it!"
-            })
-
         # Get OpenAI's response
         response = client.chat.completions.create(model="gpt-3.5-turbo", messages=st.session_state.messages)
         msg = response.choices[0].message.content
