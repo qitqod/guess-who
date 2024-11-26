@@ -9,7 +9,7 @@ from openai import OpenAI
 #Load the foods data from the JSON file
 def load_foods():
     with open("foods.json", "r") as file:
-        return json.load(file)["foods"]
+        return json.load(file)["data/foods"]
 
 #Pick a random food from the list
 foods = load_foods()
