@@ -1,0 +1,1219 @@
+{
+  "foods": [
+      {
+          "name": "Pizza",
+          "attributes": {
+              "color": "varied",
+              "type_of_food": "savory",
+              "country_of_origin": "Italy",
+              "main_ingredient": "dough, cheese, tomato sauce",
+              "cooking_method": "baked",
+              "dietary_preference": "vegetarian, gluten-free options",
+              "meal_type": "lunch, dinner",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Burger",
+          "attributes": {
+              "color": "brown, yellow",
+              "type_of_food": "savory",
+              "country_of_origin": "United States",
+              "main_ingredient": "beef patty, bun, cheese",
+              "cooking_method": "grilled, fried",
+              "dietary_preference": "omnivore",
+              "meal_type": "lunch, dinner",
+              "spicy": "sometimes (hot sauce)",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Tacos",
+          "attributes": {
+              "color": "varied",
+              "type_of_food": "savory",
+              "country_of_origin": "Mexico",
+              "main_ingredient": "tortilla, meat, vegetables",
+              "cooking_method": "grilled, fried",
+              "dietary_preference": "omnivore, vegetarian options",
+              "meal_type": "lunch, dinner",
+              "spicy": "yes",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Pasta",
+          "attributes": {
+              "color": "yellow, white",
+              "type_of_food": "savory",
+              "country_of_origin": "Italy",
+              "main_ingredient": "wheat, eggs",
+              "cooking_method": "boiled",
+              "dietary_preference": "vegetarian, vegan options",
+              "meal_type": "lunch, dinner",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Paella",
+          "attributes": {
+              "color": "yellow, red",
+              "type_of_food": "savory",
+              "country_of_origin": "Spain",
+              "main_ingredient": "rice, seafood, saffron",
+              "cooking_method": "baked, simmered",
+              "dietary_preference": "pescatarian, omnivore",
+              "meal_type": "lunch, dinner",
+              "spicy": "no",
+              "popular_in": "Spain, worldwide"
+          }
+      },
+      {
+          "name": "Biryani",
+          "attributes": {
+              "color": "yellow, brown",
+              "type_of_food": "savory",
+              "country_of_origin": "India",
+              "main_ingredient": "rice, meat, spices",
+              "cooking_method": "boiled, simmered",
+              "dietary_preference": "omnivore, vegetarian options",
+              "meal_type": "lunch, dinner",
+              "spicy": "yes",
+              "popular_in": "India, Pakistan, worldwide"
+          }
+      },
+      {
+          "name": "Falafel",
+          "attributes": {
+              "color": "golden brown",
+              "type_of_food": "savory",
+              "country_of_origin": "Middle East",
+              "main_ingredient": "chickpeas, herbs, spices",
+              "cooking_method": "fried",
+              "dietary_preference": "vegan, vegetarian",
+              "meal_type": "lunch, dinner",
+              "spicy": "sometimes",
+              "popular_in": "Middle East, worldwide"
+          }
+      },
+      {
+          "name": "Ice Cream",
+          "attributes": {
+              "color": "varied",
+              "type_of_food": "dessert",
+              "country_of_origin": "United States, Europe",
+              "main_ingredient": "milk, sugar, cream",
+              "cooking_method": "frozen",
+              "dietary_preference": "vegetarian, dairy-based",
+              "meal_type": "dessert, snack",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Apple Pie",
+          "attributes": {
+              "color": "golden brown",
+              "type_of_food": "dessert",
+              "country_of_origin": "United States",
+              "main_ingredient": "apple, pastry, sugar, cinnamon",
+              "cooking_method": "baked",
+              "dietary_preference": "vegetarian",
+              "meal_type": "dessert",
+              "spicy": "no",
+              "popular_in": "United States, worldwide"
+          }
+      },
+      {
+          "name": "Apple",
+          "attributes": {
+              "color": "red, green, yellow",
+              "type_of_food": "fruit",
+              "country_of_origin": "Central Asia",
+              "main_ingredient": "itself",
+              "cooking_method": "raw, baked, juiced",
+              "dietary_preference": "vegetarian, vegan",
+              "meal_type": "snack, breakfast, dessert",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Banana",
+          "attributes": {
+              "color": "yellow",
+              "type_of_food": "fruit",
+              "country_of_origin": "Southeast Asia",
+              "main_ingredient": "itself",
+              "cooking_method": "raw, fried",
+              "dietary_preference": "vegetarian, vegan",
+              "meal_type": "snack, breakfast, dessert",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Carrot",
+          "attributes": {
+              "color": "orange",
+              "type_of_food": "vegetable",
+              "country_of_origin": "Persia (modern-day Iran)",
+              "main_ingredient": "itself",
+              "cooking_method": "raw, boiled, roasted, steamed",
+              "dietary_preference": "vegetarian, vegan",
+              "meal_type": "side dish, snack",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Tomato",
+          "attributes": {
+              "color": "red, yellow, green",
+              "type_of_food": "fruit",
+              "country_of_origin": "South America",
+              "main_ingredient": "itself",
+              "cooking_method": "raw, cooked, roasted",
+              "dietary_preference": "vegetarian, vegan",
+              "meal_type": "side dish, salad, main course",
+              "spicy": "sometimes (with chili)",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Broccoli",
+          "attributes": {
+              "color": "green",
+              "type_of_food": "vegetable",
+              "country_of_origin": "Italy",
+              "main_ingredient": "itself",
+              "cooking_method": "boiled, steamed, roasted",
+              "dietary_preference": "vegetarian, vegan",
+              "meal_type": "side dish, salad",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Orange",
+          "attributes": {
+              "color": "orange",
+              "type_of_food": "fruit",
+              "country_of_origin": "Southeast Asia",
+              "main_ingredient": "itself",
+              "cooking_method": "raw, juiced",
+              "dietary_preference": "vegetarian, vegan",
+              "meal_type": "snack, breakfast, dessert",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Spinach",
+          "attributes": {
+              "color": "green",
+              "type_of_food": "vegetable",
+              "country_of_origin": "Persia",
+              "main_ingredient": "itself",
+              "cooking_method": "raw, steamed, saut\u00e9ed",
+              "dietary_preference": "vegetarian, vegan",
+              "meal_type": "side dish, salad",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Strawberry",
+          "attributes": {
+              "color": "red",
+              "type_of_food": "fruit",
+              "country_of_origin": "Europe, North America",
+              "main_ingredient": "itself",
+              "cooking_method": "raw, juiced, baked",
+              "dietary_preference": "vegetarian, vegan",
+              "meal_type": "dessert, snack",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Cucumber",
+          "attributes": {
+              "color": "green",
+              "type_of_food": "vegetable",
+              "country_of_origin": "India",
+              "main_ingredient": "itself",
+              "cooking_method": "raw, pickled",
+              "dietary_preference": "vegetarian, vegan",
+              "meal_type": "side dish, salad",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Pineapple",
+          "attributes": {
+              "color": "yellow",
+              "type_of_food": "fruit",
+              "country_of_origin": "South America",
+              "main_ingredient": "itself",
+              "cooking_method": "raw, juiced, grilled",
+              "dietary_preference": "vegetarian, vegan",
+              "meal_type": "snack, dessert",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Potato",
+          "attributes": {
+              "color": "brown, yellow, purple",
+              "type_of_food": "vegetable",
+              "country_of_origin": "South America",
+              "main_ingredient": "itself",
+              "cooking_method": "boiled, baked, fried, mashed",
+              "dietary_preference": "vegetarian, vegan",
+              "meal_type": "side dish, main course",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Lettuce",
+          "attributes": {
+              "color": "green, red",
+              "type_of_food": "vegetable",
+              "country_of_origin": "Egypt",
+              "main_ingredient": "itself",
+              "cooking_method": "raw",
+              "dietary_preference": "vegetarian, vegan",
+              "meal_type": "salad",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Blueberry",
+          "attributes": {
+              "color": "blue",
+              "type_of_food": "fruit",
+              "country_of_origin": "North America",
+              "main_ingredient": "itself",
+              "cooking_method": "raw, juiced, baked",
+              "dietary_preference": "vegetarian, vegan",
+              "meal_type": "snack, dessert",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Grapes",
+          "attributes": {
+              "color": "green, purple, red",
+              "type_of_food": "fruit",
+              "country_of_origin": "Middle East, Europe",
+              "main_ingredient": "itself",
+              "cooking_method": "raw, juiced, dried",
+              "dietary_preference": "vegetarian, vegan",
+              "meal_type": "snack, dessert",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Watermelon",
+          "attributes": {
+              "color": "green, red",
+              "type_of_food": "fruit",
+              "country_of_origin": "Africa",
+              "main_ingredient": "itself",
+              "cooking_method": "raw",
+              "dietary_preference": "vegetarian, vegan",
+              "meal_type": "snack, dessert",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Cabbage",
+          "attributes": {
+              "color": "green, purple",
+              "type_of_food": "vegetable",
+              "country_of_origin": "Europe",
+              "main_ingredient": "itself",
+              "cooking_method": "raw, boiled, saut\u00e9ed",
+              "dietary_preference": "vegetarian, vegan",
+              "meal_type": "side dish, salad",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Mango",
+          "attributes": {
+              "color": "yellow, orange, red",
+              "type_of_food": "fruit",
+              "country_of_origin": "South Asia",
+              "main_ingredient": "itself",
+              "cooking_method": "raw, juiced, dried",
+              "dietary_preference": "vegetarian, vegan",
+              "meal_type": "snack, dessert",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Avocado",
+          "attributes": {
+              "color": "green, dark green",
+              "type_of_food": "fruit",
+              "country_of_origin": "Mexico",
+              "main_ingredient": "itself",
+              "cooking_method": "raw, blended",
+              "dietary_preference": "vegetarian, vegan",
+              "meal_type": "side dish, snack, salad",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Peach",
+          "attributes": {
+              "color": "yellow, red",
+              "type_of_food": "fruit",
+              "country_of_origin": "China",
+              "main_ingredient": "itself",
+              "cooking_method": "raw, baked, canned",
+              "dietary_preference": "vegetarian, vegan",
+              "meal_type": "snack, dessert",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Corn",
+          "attributes": {
+              "color": "yellow, white",
+              "type_of_food": "vegetable",
+              "country_of_origin": "Mesoamerica",
+              "main_ingredient": "itself",
+              "cooking_method": "boiled, grilled, roasted",
+              "dietary_preference": "vegetarian, vegan",
+              "meal_type": "side dish, main course",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "French Fries",
+          "attributes": {
+              "color": "golden",
+              "type_of_food": "snack",
+              "country_of_origin": "Belgium",
+              "main_ingredient": "potato",
+              "cooking_method": "fried",
+              "dietary_preference": "vegetarian",
+              "meal_type": "snack, side dish",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Rice",
+          "attributes": {
+              "color": "white, brown",
+              "type_of_food": "grain",
+              "country_of_origin": "China",
+              "main_ingredient": "itself",
+              "cooking_method": "boiled, steamed, fried",
+              "dietary_preference": "vegetarian, vegan",
+              "meal_type": "side dish, main course",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Sushi",
+          "attributes": {
+              "color": "varied",
+              "type_of_food": "dish",
+              "country_of_origin": "Japan",
+              "main_ingredient": "fish, rice, seaweed",
+              "cooking_method": "raw, rolled",
+              "dietary_preference": "non-vegetarian",
+              "meal_type": "lunch, dinner",
+              "spicy": "sometimes",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Chocolate Cake",
+          "attributes": {
+              "color": "brown",
+              "type_of_food": "dessert",
+              "country_of_origin": "Unknown",
+              "main_ingredient": "chocolate, flour, sugar",
+              "cooking_method": "baked",
+              "dietary_preference": "vegetarian",
+              "meal_type": "dessert",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Eggplant",
+          "attributes": {
+              "color": "purple",
+              "type_of_food": "vegetable",
+              "country_of_origin": "India",
+              "main_ingredient": "itself",
+              "cooking_method": "grilled, baked, fried",
+              "dietary_preference": "vegetarian, vegan",
+              "meal_type": "side dish, main course",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Salmon",
+          "attributes": {
+              "color": "pink",
+              "type_of_food": "fish",
+              "country_of_origin": "Northern Hemisphere",
+              "main_ingredient": "itself",
+              "cooking_method": "grilled, smoked, baked",
+              "dietary_preference": "non-vegetarian",
+              "meal_type": "main course",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Bread",
+          "attributes": {
+              "color": "white, brown",
+              "type_of_food": "grain-based",
+              "country_of_origin": "Middle East",
+              "main_ingredient": "flour",
+              "cooking_method": "baked",
+              "dietary_preference": "vegetarian",
+              "meal_type": "breakfast, snack",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Cheese",
+          "attributes": {
+              "color": "yellow, white",
+              "type_of_food": "dairy",
+              "country_of_origin": "Mesopotamia",
+              "main_ingredient": "milk",
+              "cooking_method": "fermented",
+              "dietary_preference": "vegetarian",
+              "meal_type": "snack, main course",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Chocolate",
+          "attributes": {
+              "color": "brown, white",
+              "type_of_food": "snack",
+              "country_of_origin": "Mesoamerica",
+              "main_ingredient": "cacao",
+              "cooking_method": "processed",
+              "dietary_preference": "vegetarian",
+              "meal_type": "snack, dessert",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Popcorn",
+          "attributes": {
+              "color": "white, yellow",
+              "type_of_food": "snack",
+              "country_of_origin": "North America",
+              "main_ingredient": "corn",
+              "cooking_method": "popped",
+              "dietary_preference": "vegetarian",
+              "meal_type": "snack",
+              "spicy": "sometimes",
+              "popular_in": "cinemas worldwide"
+          }
+      },
+      {
+          "name": "Potato Chips",
+          "attributes": {
+              "color": "golden",
+              "type_of_food": "snack",
+              "country_of_origin": "United States",
+              "main_ingredient": "potato",
+              "cooking_method": "fried",
+              "dietary_preference": "vegetarian",
+              "meal_type": "snack",
+              "spicy": "sometimes",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Sweet Potato",
+          "attributes": {
+              "color": "orange, purple",
+              "type_of_food": "vegetable",
+              "country_of_origin": "Central America",
+              "main_ingredient": "itself",
+              "cooking_method": "baked, boiled, fried",
+              "dietary_preference": "vegetarian, vegan",
+              "meal_type": "side dish, snack",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Kiwi",
+          "attributes": {
+              "color": "brown (outside), green (inside)",
+              "type_of_food": "fruit",
+              "country_of_origin": "China",
+              "main_ingredient": "itself",
+              "cooking_method": "raw",
+              "dietary_preference": "vegetarian, vegan",
+              "meal_type": "snack, dessert",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Coconut",
+          "attributes": {
+              "color": "brown (outside), white (inside)",
+              "type_of_food": "fruit",
+              "country_of_origin": "Southeast Asia",
+              "main_ingredient": "itself",
+              "cooking_method": "raw, grated, juiced",
+              "dietary_preference": "vegetarian, vegan",
+              "meal_type": "snack, dessert",
+              "spicy": "no",
+              "popular_in": "tropical regions"
+          }
+      },
+      {
+          "name": "Lasagna",
+          "attributes": {
+              "color": "varied",
+              "type_of_food": "dish",
+              "country_of_origin": "Italy",
+              "main_ingredient": "pasta, cheese, tomato",
+              "cooking_method": "baked",
+              "dietary_preference": "vegetarian, non-vegetarian",
+              "meal_type": "dinner, lunch",
+              "spicy": "sometimes",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Shrimp",
+          "attributes": {
+              "color": "pink, orange",
+              "type_of_food": "seafood",
+              "country_of_origin": "coastal regions worldwide",
+              "main_ingredient": "itself",
+              "cooking_method": "grilled, fried, boiled",
+              "dietary_preference": "non-vegetarian",
+              "meal_type": "main course, side dish",
+              "spicy": "sometimes",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Green Beans",
+          "attributes": {
+              "color": "green",
+              "type_of_food": "vegetable",
+              "country_of_origin": "South America",
+              "main_ingredient": "itself",
+              "cooking_method": "steamed, boiled, stir-fried",
+              "dietary_preference": "vegetarian, vegan",
+              "meal_type": "side dish",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Macaroni",
+          "attributes": {
+              "color": "yellow",
+              "type_of_food": "grain-based",
+              "country_of_origin": "Italy",
+              "main_ingredient": "flour",
+              "cooking_method": "boiled",
+              "dietary_preference": "vegetarian",
+              "meal_type": "lunch, dinner",
+              "spicy": "sometimes",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Honey",
+          "attributes": {
+              "color": "golden",
+              "type_of_food": "sweetener",
+              "country_of_origin": "worldwide",
+              "main_ingredient": "itself",
+              "cooking_method": "raw, added",
+              "dietary_preference": "vegetarian",
+              "meal_type": "breakfast, snack",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Peanuts",
+          "attributes": {
+              "color": "beige",
+              "type_of_food": "snack",
+              "country_of_origin": "South America",
+              "main_ingredient": "itself",
+              "cooking_method": "roasted, boiled",
+              "dietary_preference": "vegetarian, vegan",
+              "meal_type": "snack",
+              "spicy": "sometimes",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Onion",
+          "attributes": {
+              "color": "red, white, yellow",
+              "type_of_food": "vegetable",
+              "country_of_origin": "Asia",
+              "main_ingredient": "itself",
+              "cooking_method": "raw, saut\u00e9ed, fried",
+              "dietary_preference": "vegetarian, vegan",
+              "meal_type": "side dish, main course",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Pierogi",
+          "attributes": {
+              "color": "golden (fried), white (boiled)",
+              "type_of_food": "dish",
+              "country_of_origin": "Poland",
+              "main_ingredient": "flour, potatoes, cheese",
+              "cooking_method": "boiled, fried",
+              "dietary_preference": "vegetarian, non-vegetarian",
+              "meal_type": "dinner, lunch",
+              "spicy": "no",
+              "popular_in": "Eastern Europe"
+          }
+      },
+      {
+          "name": "Bigos",
+          "attributes": {
+              "color": "brown",
+              "type_of_food": "stew",
+              "country_of_origin": "Poland",
+              "main_ingredient": "cabbage, meat, sauerkraut",
+              "cooking_method": "stewed",
+              "dietary_preference": "non-vegetarian",
+              "meal_type": "dinner, lunch",
+              "spicy": "no",
+              "popular_in": "Eastern Europe"
+          }
+      },
+      {
+          "name": "Sauerbraten",
+          "attributes": {
+              "color": "brown",
+              "type_of_food": "dish",
+              "country_of_origin": "Germany",
+              "main_ingredient": "beef, vinegar",
+              "cooking_method": "braised",
+              "dietary_preference": "non-vegetarian",
+              "meal_type": "dinner",
+              "spicy": "no",
+              "popular_in": "Germany"
+          }
+      },
+      {
+          "name": "Bratwurst",
+          "attributes": {
+              "color": "golden, brown",
+              "type_of_food": "sausage",
+              "country_of_origin": "Germany",
+              "main_ingredient": "pork, beef",
+              "cooking_method": "grilled, fried",
+              "dietary_preference": "non-vegetarian",
+              "meal_type": "dinner, lunch, snack",
+              "spicy": "sometimes",
+              "popular_in": "Germany, worldwide"
+          }
+      },
+      {
+          "name": "Goulash",
+          "attributes": {
+              "color": "red, brown",
+              "type_of_food": "stew",
+              "country_of_origin": "Central Europe",
+              "main_ingredient": "beef, paprika",
+              "cooking_method": "stewed",
+              "dietary_preference": "non-vegetarian",
+              "meal_type": "dinner, lunch",
+              "spicy": "sometimes",
+              "popular_in": "Germany, Hungary, Poland"
+          }
+      },
+      {
+          "name": "Kartoffelsalat",
+          "attributes": {
+              "color": "yellow, white",
+              "type_of_food": "salad",
+              "country_of_origin": "Germany",
+              "main_ingredient": "potatoes, mayonnaise",
+              "cooking_method": "boiled",
+              "dietary_preference": "vegetarian",
+              "meal_type": "side dish",
+              "spicy": "no",
+              "popular_in": "Germany, Austria"
+          }
+      },
+      {
+          "name": "Zurek",
+          "attributes": {
+              "color": "white, creamy",
+              "type_of_food": "soup",
+              "country_of_origin": "Poland",
+              "main_ingredient": "sour rye, sausage",
+              "cooking_method": "boiled",
+              "dietary_preference": "non-vegetarian",
+              "meal_type": "dinner, lunch",
+              "spicy": "no",
+              "popular_in": "Poland"
+          }
+      },
+      {
+          "name": "Rouladen",
+          "attributes": {
+              "color": "brown",
+              "type_of_food": "dish",
+              "country_of_origin": "Germany",
+              "main_ingredient": "beef, bacon, pickles",
+              "cooking_method": "braised",
+              "dietary_preference": "non-vegetarian",
+              "meal_type": "dinner",
+              "spicy": "no",
+              "popular_in": "Germany"
+          }
+      },
+      {
+          "name": "Polish Apple Pie",
+          "attributes": {
+              "color": "golden",
+              "type_of_food": "dessert",
+              "country_of_origin": "Poland",
+              "main_ingredient": "apples, flour",
+              "cooking_method": "baked",
+              "dietary_preference": "vegetarian",
+              "meal_type": "dessert",
+              "spicy": "no",
+              "popular_in": "Poland"
+          }
+      },
+      {
+          "name": "Wurstsalat",
+          "attributes": {
+              "color": "yellow, white",
+              "type_of_food": "salad",
+              "country_of_origin": "Germany",
+              "main_ingredient": "sausage, onions",
+              "cooking_method": "raw",
+              "dietary_preference": "non-vegetarian",
+              "meal_type": "snack, lunch",
+              "spicy": "no",
+              "popular_in": "Germany, Austria"
+          }
+      },
+      {
+          "name": "Potato Pancakes",
+          "attributes": {
+              "color": "golden",
+              "type_of_food": "snack",
+              "country_of_origin": "Poland",
+              "main_ingredient": "potatoes",
+              "cooking_method": "fried",
+              "dietary_preference": "vegetarian",
+              "meal_type": "snack, side dish",
+              "spicy": "no",
+              "popular_in": "Eastern Europe"
+          }
+      },
+      {
+          "name": "Pretzel",
+          "attributes": {
+              "color": "golden, brown",
+              "type_of_food": "snack",
+              "country_of_origin": "Germany",
+              "main_ingredient": "flour",
+              "cooking_method": "baked",
+              "dietary_preference": "vegetarian",
+              "meal_type": "snack",
+              "spicy": "no",
+              "popular_in": "Germany, worldwide"
+          }
+      },
+      {
+          "name": "Kielbasa",
+          "attributes": {
+              "color": "brown",
+              "type_of_food": "sausage",
+              "country_of_origin": "Poland",
+              "main_ingredient": "pork",
+              "cooking_method": "grilled, fried, boiled",
+              "dietary_preference": "non-vegetarian",
+              "meal_type": "dinner, lunch",
+              "spicy": "sometimes",
+              "popular_in": "Poland"
+          }
+      },
+      {
+          "name": "Silesian Dumplings",
+          "attributes": {
+              "color": "white",
+              "type_of_food": "dish",
+              "country_of_origin": "Poland",
+              "main_ingredient": "potatoes, flour",
+              "cooking_method": "boiled",
+              "dietary_preference": "vegetarian",
+              "meal_type": "side dish, lunch",
+              "spicy": "no",
+              "popular_in": "Poland"
+          }
+      },
+      {
+          "name": "Schwarzbrot",
+          "attributes": {
+              "color": "brown",
+              "type_of_food": "bread",
+              "country_of_origin": "Germany",
+              "main_ingredient": "rye",
+              "cooking_method": "baked",
+              "dietary_preference": "vegetarian",
+              "meal_type": "breakfast, snack",
+              "spicy": "no",
+              "popular_in": "Germany"
+          }
+      },
+      {
+          "name": "Szarlotka",
+          "attributes": {
+              "color": "golden",
+              "type_of_food": "dessert",
+              "country_of_origin": "Poland",
+              "main_ingredient": "apples, cinnamon, flour",
+              "cooking_method": "baked",
+              "dietary_preference": "vegetarian",
+              "meal_type": "dessert",
+              "spicy": "no",
+              "popular_in": "Poland"
+          }
+      },
+      {
+          "name": "Coq au Vin",
+          "attributes": {
+              "color": "dark brown, red",
+              "type_of_food": "dish",
+              "country_of_origin": "France",
+              "main_ingredient": "chicken, wine",
+              "cooking_method": "braised",
+              "dietary_preference": "non-vegetarian",
+              "meal_type": "dinner",
+              "spicy": "no",
+              "popular_in": "France"
+          }
+      },
+      {
+          "name": "Beef Bourguignon",
+          "attributes": {
+              "color": "dark brown",
+              "type_of_food": "stew",
+              "country_of_origin": "France",
+              "main_ingredient": "beef, red wine",
+              "cooking_method": "stewed",
+              "dietary_preference": "non-vegetarian",
+              "meal_type": "dinner",
+              "spicy": "no",
+              "popular_in": "France, worldwide"
+          }
+      },
+      {
+          "name": "Duck a l'Orange",
+          "attributes": {
+              "color": "golden, orange",
+              "type_of_food": "dish",
+              "country_of_origin": "France",
+              "main_ingredient": "duck, orange sauce",
+              "cooking_method": "roasted",
+              "dietary_preference": "non-vegetarian",
+              "meal_type": "dinner",
+              "spicy": "no",
+              "popular_in": "France"
+          }
+      },
+      {
+          "name": "Ratatouille",
+          "attributes": {
+              "color": "varied",
+              "type_of_food": "vegetable dish",
+              "country_of_origin": "France",
+              "main_ingredient": "zucchini, eggplant, tomatoes",
+              "cooking_method": "stewed",
+              "dietary_preference": "vegetarian, vegan",
+              "meal_type": "side dish, dinner",
+              "spicy": "no",
+              "popular_in": "France"
+          }
+      },
+      {
+          "name": "Foie Gras",
+          "attributes": {
+              "color": "golden, beige",
+              "type_of_food": "delicacy",
+              "country_of_origin": "France",
+              "main_ingredient": "duck liver",
+              "cooking_method": "seared, p\u00e2t\u00e9",
+              "dietary_preference": "non-vegetarian",
+              "meal_type": "appetizer",
+              "spicy": "no",
+              "popular_in": "France"
+          }
+      },
+      {
+          "name": "Escargots",
+          "attributes": {
+              "color": "green, beige",
+              "type_of_food": "delicacy",
+              "country_of_origin": "France",
+              "main_ingredient": "snails",
+              "cooking_method": "baked with garlic butter",
+              "dietary_preference": "non-vegetarian",
+              "meal_type": "appetizer",
+              "spicy": "no",
+              "popular_in": "France"
+          }
+      },
+      {
+          "name": "Cassoulet",
+          "attributes": {
+              "color": "golden, brown",
+              "type_of_food": "dish",
+              "country_of_origin": "France",
+              "main_ingredient": "white beans, pork, sausage",
+              "cooking_method": "slow-cooked",
+              "dietary_preference": "non-vegetarian",
+              "meal_type": "dinner",
+              "spicy": "no",
+              "popular_in": "France"
+          }
+      },
+      {
+          "name": "Chateaubriand",
+          "attributes": {
+              "color": "brown",
+              "type_of_food": "dish",
+              "country_of_origin": "France",
+              "main_ingredient": "beef tenderloin",
+              "cooking_method": "grilled, roasted",
+              "dietary_preference": "non-vegetarian",
+              "meal_type": "dinner",
+              "spicy": "no",
+              "popular_in": "France"
+          }
+      },
+      {
+          "name": "Bouillabaisse",
+          "attributes": {
+              "color": "orange, yellow",
+              "type_of_food": "soup",
+              "country_of_origin": "France",
+              "main_ingredient": "fish, shellfish",
+              "cooking_method": "stewed",
+              "dietary_preference": "non-vegetarian",
+              "meal_type": "dinner",
+              "spicy": "no",
+              "popular_in": "France"
+          }
+      },
+      {
+          "name": "Tarte Tatin",
+          "attributes": {
+              "color": "golden, brown",
+              "type_of_food": "dessert",
+              "country_of_origin": "France",
+              "main_ingredient": "apples, caramel",
+              "cooking_method": "baked",
+              "dietary_preference": "vegetarian",
+              "meal_type": "dessert",
+              "spicy": "no",
+              "popular_in": "France"
+          }
+      },
+      {
+          "name": "Veal Schnitzel",
+          "attributes": {
+              "color": "golden",
+              "type_of_food": "meat dish",
+              "country_of_origin": "Germany, Austria",
+              "main_ingredient": "veal",
+              "cooking_method": "fried",
+              "dietary_preference": "non-vegetarian",
+              "meal_type": "dinner, lunch",
+              "spicy": "no",
+              "popular_in": "Europe"
+          }
+      },
+      {
+          "name": "Lamb Rogan Josh",
+          "attributes": {
+              "color": "red",
+              "type_of_food": "dish",
+              "country_of_origin": "India",
+              "main_ingredient": "lamb",
+              "cooking_method": "stewed",
+              "dietary_preference": "non-vegetarian",
+              "meal_type": "dinner",
+              "spicy": "yes",
+              "popular_in": "India, worldwide"
+          }
+      },
+      {
+          "name": "Rabbit Stew",
+          "attributes": {
+              "color": "brown",
+              "type_of_food": "stew",
+              "country_of_origin": "France",
+              "main_ingredient": "rabbit",
+              "cooking_method": "stewed",
+              "dietary_preference": "non-vegetarian",
+              "meal_type": "dinner",
+              "spicy": "no",
+              "popular_in": "France, rural areas worldwide"
+          }
+      },
+      {
+          "name": "Cordon Bleu",
+          "attributes": {
+              "color": "golden",
+              "type_of_food": "dish",
+              "country_of_origin": "France, Switzerland",
+              "main_ingredient": "chicken, ham, cheese",
+              "cooking_method": "fried",
+              "dietary_preference": "non-vegetarian",
+              "meal_type": "dinner, lunch",
+              "spicy": "no",
+              "popular_in": "Europe"
+          }
+      },
+      {
+          "name": "Venison Stew",
+          "attributes": {
+              "color": "dark brown",
+              "type_of_food": "stew",
+              "country_of_origin": "worldwide",
+              "main_ingredient": "venison",
+              "cooking_method": "stewed",
+              "dietary_preference": "non-vegetarian",
+              "meal_type": "dinner",
+              "spicy": "no",
+              "popular_in": "Europe, North America"
+          }
+      },
+      {
+          "name": "Bison Burger",
+          "attributes": {
+              "color": "brown",
+              "type_of_food": "sandwich",
+              "country_of_origin": "United States",
+              "main_ingredient": "bison meat",
+              "cooking_method": "grilled",
+              "dietary_preference": "non-vegetarian",
+              "meal_type": "lunch, dinner",
+              "spicy": "no",
+              "popular_in": "North America"
+          }
+      },
+      {
+          "name": "Quiche Lorraine",
+          "attributes": {
+              "color": "golden",
+              "type_of_food": "dish",
+              "country_of_origin": "France",
+              "main_ingredient": "eggs, cream, bacon",
+              "cooking_method": "baked",
+              "dietary_preference": "non-vegetarian",
+              "meal_type": "breakfast, brunch",
+              "spicy": "no",
+              "popular_in": "France, worldwide"
+          }
+      },
+      {
+          "name": "Croissant",
+          "attributes": {
+              "color": "golden",
+              "type_of_food": "pastry",
+              "country_of_origin": "France",
+              "main_ingredient": "flour, butter",
+              "cooking_method": "baked",
+              "dietary_preference": "vegetarian",
+              "meal_type": "breakfast, snack",
+              "spicy": "no",
+              "popular_in": "worldwide"
+          }
+      },
+      {
+          "name": "Duck Confit",
+          "attributes": {
+              "color": "golden, brown",
+              "type_of_food": "dish",
+              "country_of_origin": "France",
+              "main_ingredient": "duck",
+              "cooking_method": "slow-cooked",
+              "dietary_preference": "non-vegetarian",
+              "meal_type": "dinner",
+              "spicy": "no",
+              "popular_in": "France"
+          }
+      },
+      {
+          "name": "Andouillette",
+          "attributes": {
+              "color": "beige, golden",
+              "type_of_food": "sausage",
+              "country_of_origin": "France",
+              "main_ingredient": "pork intestines",
+              "cooking_method": "grilled",
+              "dietary_preference": "non-vegetarian",
+              "meal_type": "dinner, lunch",
+              "spicy": "no",
+              "popular_in": "France"
+          }
+      }
+  ],
+  "categories": [
+      "color",
+      "type_of_food",
+      "country_of_origin",
+      "main_ingredient",
+      "cooking_method",
+      "dietary_preference",
+      "meal_type",
+      "spicy",
+      "popular_in"
+  ]
+}
