@@ -17,7 +17,8 @@ page = st.sidebar.radio("Choose a page", list(PAGES.keys()))
 
 # Welcome page
 if page == "Welcome":
-    st.title("Welcome to the Guess Who Game")
+    st.title("Welcome to the Chat Application")
+    st.write("This is a simple web app using Streamlit and OpenAI's API.")
     st.write("Select a page from the sidebar to start!")
 
 # Chat page
@@ -25,18 +26,19 @@ elif page == "Chat":
     st.title("Chat with OpenAI")
 
     # User input for the chat
-    user_input = st.text_input("Guess a historical figure:")
+    user_input = st.text_input("Ask me anything:")
 
     # Generate response when user clicks "Send"
     if st.button("Send") and user_input:
         try:
-            # Use the new API for chat completions (v1.0+)
-            response = openai.completions.create(
-                model="gpt-3.5-turbo",  # Use the model like "gpt-3.5-turbo" or "gpt-4"
-                prompt=user_input,
+            # Use the new API for chat-based completions (v1/chat/completions endpoint)
+            response = openai.chat_completions.create(
+                model="gpt-3.5-turbo",  # Use the chat model like "gpt-3.5-turbo" or "gpt-4"
+                messages=[{"role": "user", "content": user_input}],  # Correct format for chat model
                 max_tokens=150
             )
-            st.write(response.choices[0].text.strip())  # Display the response
+            # Extract and display the chat response
+            st.write(response['choices'][0]['message']['content'].strip())  # Display the response
         except Exception as e:
             st.error(f"Error: {e}")
 
